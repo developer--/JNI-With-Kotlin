@@ -1,27 +1,2 @@
-- name: TODO to Issue
-  # You may pin to the exact commit or the version.
-  # uses: alstr/todo-to-issue-action@63126d70260dc962111eb9b2293b0606971b0ed5
-  uses: alstr/todo-to-issue-action@v4.0.8
-  with:
-    # The path to the repository where the action will be used, e.g. 'alstr/my-repo' (automatically set)
-    REPO: # default is ${{ github.repository }}
-    # The SHA of the last pushed commit (automatically set)
-    BEFORE: # default is ${{ github.event.before }}
-    # The SHA of the latest commit (automatically set)
-    SHA: # default is ${{ github.sha }}
-    # The GitHub access token to allow us to retrieve, create and update issues (automatically set)
-    TOKEN: # optional, default is ${{ github.token }}
-    # The label that will be used to identify TODO comments (deprecated)
-    LABEL: # optional
-    # The marker used to signify a line comment in your code (deprecated)
-    COMMENT_MARKER: # optional
-    # Optional input that specifies whether to attempt to close an issue when a TODO is removed
-    CLOSE_ISSUES: # default is true
-    # For multiline TODOs, format each line as a new paragraph when creating the issue
-    AUTO_P: # default is true
-    # Encrypted secret corresponding to your personal access token (do not enter the actual secret)
-    PROJECTS_SECRET: # optional
-    # Default user projects
-    USER_PROJECTS: # optional
-    # Default organisation projects
-    ORG_PROJECTS: # optional
+- name: TODO-2-gh-issue
+  uses: Jamminroot/todo-2-gh-issue@1.2.1
